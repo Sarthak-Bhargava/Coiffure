@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.add-category {
+    margin: 10px 0 10px 0;
+}

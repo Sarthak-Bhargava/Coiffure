@@ -1,0 +1,83 @@
+<h1>Add Product</h1>
+<div class="form">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="">Product Id</label>
+                <input [(ngModel)]="product_id" type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="">Product Name</label>
+                    <input [(ngModel)]="p_name" type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="">Details</label>
+                  <textarea [(ngModel)]="details" type="text" rows="5" class="form-control"></textarea>
+              </div>
+          </div>
+      </div>
+
+      <div class="form">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="">brand</label>
+                    <input [(ngModel)]="brand" type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <div class="form">
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="form-group">
+                      <label for=""> Upload thumbnail</label>
+                      <input (change)="onSelectFile($event)" type="file" class="form-control">
+                  </div>
+              </div>
+          </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="">Category ID</label>
+                    <input [(ngModel)]="cg_id" type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="">price</label>
+                        <input [(ngModel)]="price" type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <button (click)="onAdd()" class="btn btn-success">Add</button>
+                        <button (click)="onReset()" style="margin-left:10px;" class="btn btn-warning">Reset</button>
+                        <button (click)="onCancel()" style="margin-left:10px;" class="btn btn-danger">Cancel</button>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+

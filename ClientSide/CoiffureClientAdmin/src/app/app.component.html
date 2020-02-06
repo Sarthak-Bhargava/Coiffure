@@ -1,0 +1,27 @@
+<!-- <app-User-login></app-User-login>
+<app-User-register></app-User-register> -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="#">HOME</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              <li><a routerLink="/Admin-Login">LogIn</a></li>
+              <li><a routerLink="/Category-List">Category</a></li>
+               <li><a routerLink="/Product-List">Product</a></li>
+              <li><a routerLink="/City-List">City</a></li>
+              <li><a routerLink="/VendorInfo-List">Vendor Information</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>

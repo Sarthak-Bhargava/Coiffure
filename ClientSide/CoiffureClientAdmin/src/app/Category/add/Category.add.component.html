@@ -1,0 +1,31 @@
+<h1>Add Category</h1>
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="">cg_id</label>
+            <input [(ngModel)]="cg_id" type="text" class="form-control">
+        </div>
+    </div>
+</div>
+<!-- <div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="">PID</label>
+            <input [(ngModel)]="PID" type="text" class="form-control">
+        </div>
+    </div>
+</div> -->
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="">Title</label>
+            <input [(ngModel)]="cg_name" type="text" class="form-control">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <button (click)="onAdd()" class="btn btn-success">Add</button>
+        <a style="margin-left: 10px;" routerLink="/Category-List" class="btn btn-danger right-pull">Cancel</a>
+    </div>
+</div>

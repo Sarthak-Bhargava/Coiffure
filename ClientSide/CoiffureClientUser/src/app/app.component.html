@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <h1><a class="navbar-brand" href="#">Coiffure</a></h1>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="pull-right">
+              <ul class="nav navbar-nav">
+                  <li><a routerLink="/Home">Home</a></li>
+                  <li><a routerLink="/aboutUs">About Us</a></li>
+                  <li><a routerLink="/Services">Services</a></li>
+                  <li><a routerLink="/ContactUs">Contact US</a></li>
+                  <li><a routerLink="/User-LOGIN">LogIn</a></li>
+                  <li><a routerLink="/User-register">New User??<br>Register Here</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</nav>
+<!-- .main-nav -->
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>
